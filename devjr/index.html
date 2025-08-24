@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - André Santana Martins</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        
+        <img class="foto-perfil" src="https://avatars.githubusercontent.com/u/197335118?v=4" alt="perfil">
+        <h1>André Santana Martins</h1>
+        <h2>Técnico de TI / Desenvolvedor</h2>
+        <ul class="info"> 
+    <li>Data de nascimento: 03/04/2003</li>
+    <li>Idade: <span id="idade"></span> anos</li>
+    <li>Belo Horizonte, Minas Gerais</li>
+    <li>Telefone: (31) 98438-2472</li>
+    <li>Email: andresantmartins@outlook.com</li>
+    <a href="https://linkedin.com/in/andre-santana-martins-b8b619355" target="_blank"> Linkedin</a> |
+    <a href=" https://github.com/SantanaDZ" target="_blank">GitHub</a>
+</ul>
+<p> </p>
+<button id="btn-tema" onclick="toggleTheme()">🌙 Tema Escuro</button>
+    </header>
+
+   <main>
+    <section>
+        <!-- <button onclick="toggleSection('formacao')">Mostrar/Ocultar Formação</button>
+<section id="formacao"> -->
+        <h2>Formação Acadêmica</h2>
+        <h3>Técnico de Informática - Vital Brasil - Polimig</h3> 
+        <p>Conclusão: 12/2022</p>
+        <section></section>
+        <h3>Análise e Desenvolvimento de Sistemas - UNIFENAS</h3>
+        <p>Conclusão: 06/2026</p>
+        <section></section>
+        <h3>Curso de Programação Full Stack - Infinity School</h3>
+        <p>Conclusão: 04/2026</p>
+    </section>
+
+    <section>
+        <h2>Experiência Profissional</h2>
+        
+        <div1 class="experiencia">
+            <img src="https://raw.githubusercontent.com/SantanaDZ/Curr-culo/e3f06c2eadcb76a3280c5dbab41b174b9ae090de/curriculo_online/logo-zoomtech-roxa.svg" alt="logo zoom">
+            <h3 class="zoom">Zoom Tech Holding</h3>
+            <p class="zoom"><b>Cargo:</b> Técnico de Informática</p>
+            <p class="zoom"><b>Período:</b> 01/2023 – Até o momento</p>
+            <p class="zoom">Atuo como Técnico de Informática de referência no centro de Belo Horizonte, prestando serviços à Prodabel — empresa de informática da Prefeitura de Belo Horizonte. Realizo manutenção, instalação e padronização de computadores, além de atualizações de sistemas e softwares, seguindo os padrões da rede municipal. Trabalho com Windows, Linux e macOS.</p>
+        
+        </div1>
+
+        <section></section>
+
+        <div2 class="experiencia">
+            <img src="https://raw.githubusercontent.com/SantanaDZ/Curr-culo/refs/heads/main/curriculo_online/PRODABEL.png" alt="logo prodabel">
+            <h3 class="zoom">Prodabel</h3>
+            <p class="zoom"><b>Cargo:</b> Estagiário de TI</p>
+            <p class="zoom"><b>Período:</b> 01/2021 – 12/2021</p>
+            <p class="zoom" >Auxílio na manutenção de computadores, instalação de softwares, suporte técnico aos usuários e organização de equipamentos.</p>
+        </div2>
+    </section>
+
+    <section>
+        <h2>Cursos e Aprimoramentos</h2>
+        <div class="curso">
+            <img src="https://raw.githubusercontent.com/SantanaDZ/Curr-culo/refs/heads/main/curriculo_online/infinityschool_logo.jpg" alt="logo Infinity">
+            <h3>Curso de Programação Full Stack - Infinity School</h3>
+            <p><b>Duração:</b> 13 meses</p>
+            <ul>
+                <li>Introdução à Programação (Lógica com IA)</li>
+                <li>Python com IA</li>
+                <li>Criação de Sites (HTML/CSS)</li>
+                <li>Aplicativos e Games (JavaScript)</li>
+                <li>Projeto Final</li>
+            </ul>
+            <p><b>Certificados:</b> <a href="https://drive.google.com/drive/folders/1oseF_HA-BtgiWtmZDyCm_f0vqGqCHysw" target="_blank">Google Drive</a></p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Habilidades</h2>
+        <ul>
+            <li>Fácil adaptação</li>
+            <li>Ótimo relacionamento interpessoal</li>
+            <li>Proativo</li>
+            <li>Comunicativo</li>
+            <li>Flexível</li>
+            <li>Resolução de problemas</li>
+            <li>Inglês Intermediário</li>
+        </ul>
+    </section>
+</body>
+
+<!-- <section id="contato">
+    <h2>Contato</h2>
+    <form action="https://formspree.io/f/xyzyabcd" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="_replyto" required>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+</section> -->
+</main>
+<section id="contato">
+    <h2>Contato</h2>
+    <form id="form-contato">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="from_name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="from_email" required>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="message" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+    <p id="status"></p>
+</section>
+
+</html>
+
+<script src="script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script class="mensagem">
+    // Inicializa o EmailJS com seu User ID
+    emailjs.init("8QDg95zJO9MszIEe8");
+
+    const form = document.getElementById("form-contato");
+    const status = document.getElementById("status");
+
+    form.addEventListener("submit", function(event) {
+        event.preventDefault(); // previne o reload da página
+
+        const serviceID = "service_pcgexwj";
+        const templateID = "template_rl3pqae";
+
+        emailjs.sendForm(serviceID, templateID, this)
+            .then(() => {
+                status.textContent = "Mensagem enviada com sucesso! ";
+                form.reset();
+            }, (err) => {
+                status.textContent = "Erro ao enviar a mensagem ";
+                console.error(err);
+            });
+    });
+</script>
